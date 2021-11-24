@@ -2,12 +2,14 @@
 
 // select input field for later use
 var taskField = document.getElementById("todo");
-var tasks = document.querySelector(".tasks-list");
+var taskItem = document.querySelector(".tasks__item");
 var add = document.querySelector(".todo__add");
-var taskList = document.querySelector(".tasks-list"); // Get the value from input
-// Event listener for the add button
+var taskList = document.querySelector(".tasks__list"); // Get the value from input
 
-add.addEventListener("click", function () {
+var addItem = function addItem() {
   var task = taskField.value;
-  taskList.innerHTML += "<li>".concat(task, "</li>");
-});
+  taskList.innerHTML += "<li class=\"tasks__item\">".concat(task, "</li>");
+}; // Event listener for the add button
+
+
+add.addEventListener("click", addItem);

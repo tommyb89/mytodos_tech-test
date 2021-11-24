@@ -1,13 +1,14 @@
 // select input field for later use
 const taskField = document.getElementById("todo");
-const tasks = document.querySelector(".tasks-list");
+const taskItem = document.querySelector(".tasks__item");
 const add = document.querySelector(".todo__add");
-const taskList = document.querySelector(".tasks-list");
+const taskList = document.querySelector(".tasks__list");
 
 // Get the value from input
+const addItem = () => {
+  let task = taskField.value;
+  taskList.innerHTML += `<li class="tasks__item">${task}</li>`;
+};
 
 // Event listener for the add button
-add.addEventListener("click", () => {
-  let task = taskField.value;
-  taskList.innerHTML += `<li>${task}</li>`;
-});
+add.addEventListener("click", addItem);
