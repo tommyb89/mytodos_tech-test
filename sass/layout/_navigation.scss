@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 51px;
+  margin-left: 122px;
+  margin-right: 122px;
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 500;
+    color: $white-color;
+  }
+  &__cta {
+    padding: 12.5px 39px 13.5px 39px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

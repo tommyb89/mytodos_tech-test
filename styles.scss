@@ -1,0 +1,23 @@
+// Abstracts
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/mixins";
+// Core
+@import "./sass/core/typography";
+// Components
+@import "./sass/components/buttons";
+// Layout
+@import "./sass/layout/footer";
+@import "./sass/layout/grid";
+@import "./sass/layout/header";
+@import "./sass/layout/navigation";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JOST";
+}
+
+body {
+  background-color: $primary-color;
+}
