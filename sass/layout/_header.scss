@@ -38,7 +38,8 @@
 }
 @media only screen and (min-width: 768px) {
   .header {
-    margin-top: 73px;
+    // margin-top: 73px;
+    margin: 73px 365px 0 300px;
 
     &__title {
       font-size: 48px;
