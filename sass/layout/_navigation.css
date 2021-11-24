@@ -1,13 +1,13 @@
 .nav {
   display: flex;
   justify-content: space-between;
-}
-.nav__logo {
+
+  &__logo {
   font-size: 24px;
   font-weight: 500;
-}
-.nav__cta {
+  &__btn {
   padding: 12.5px 39px 13.5px 39px;
   font-size: 16px;
   font-weight: bold;
+}
 }

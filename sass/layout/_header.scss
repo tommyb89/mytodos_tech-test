@@ -16,13 +16,17 @@
   }
 }
 
-.todo__input {
-  color: $tertiary-color;
-  padding: 19px 200px 18px 32px;
-  background-color: $secondary-color;
-  border: 1px dashed $tertiary-color;
-  border-radius: 7px;
-  font-size: 16px;
+.todo {
+  display: flex;
+  align-items: center;
+  .todo__input {
+    color: $tertiary-color;
+    padding: 19px 200px 18px 32px;
+    background-color: $secondary-color;
+    border: 1px dashed $tertiary-color;
+    border-radius: 7px;
+    font-size: 16px;
+  }
 }
 
 .tasks {
@@ -40,7 +44,7 @@
   &__item {
     margin-top: 1px;
     height: 50px;
-    width: 369px;
+    width: 374px;
     background-color: $secondary-color;
     padding: 14px 14px 14px 33px;
   }
@@ -58,5 +62,15 @@
     &__title {
       font-size: 48px;
     }
+  }
+
+  .todo {
+    .todo__input {
+      width: 100%;
+    }
+  }
+
+  .tasks__item {
+    width: 100%;
   }
 }
