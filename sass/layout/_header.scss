@@ -1,0 +1,47 @@
+.header {
+  text-align: left;
+  margin-top: 150px;
+
+  &__title {
+    font-size: 38px;
+    color: $white-color;
+    margin-bottom: 18px;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 400px;
+    color: $tertiary-color;
+    margin-bottom: 36px;
+  }
+}
+
+.todo__input {
+  color: $tertiary-color;
+  padding: 19px 200px 18px 32px;
+  background-color: $secondary-color;
+  border: 1px dashed $tertiary-color;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.tasks {
+  margin-top: 53px;
+  color: $white-color;
+  font-size: 16px;
+  font-weight: 500;
+
+  &__complete {
+    font-size: 16px;
+    color: $tertiary-color;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-top: 73px;
+
+    &__title {
+      font-size: 48px;
+    }
+  }
+}
