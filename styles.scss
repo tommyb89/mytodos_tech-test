@@ -5,7 +5,6 @@
 // Components
 @import "./sass/components/buttons";
 // Layout
-
 @import "./sass/layout/grid";
 @import "./sass/layout/header";
 @import "./sass/layout/navigation";
@@ -20,6 +19,7 @@
 body {
   background-color: $primary-color;
   padding: 22px 28px;
+  width: 100vw;
 }
 
 @media only screen and (min-width: 768px) {
