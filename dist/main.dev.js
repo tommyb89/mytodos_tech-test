@@ -8,7 +8,7 @@ var taskList = document.querySelector(".tasks__list"); // Get the value from inp
 
 var addItem = function addItem() {
   var task = taskField.value;
-  taskList.innerHTML += "<li class=\"tasks__item\">".concat(task, "</li>");
+  taskList.innerHTML += "<li class=\"tasks__item\" type=\"checkbox\"><input type=\"checkbox\" />".concat(task, "</li>");
 }; // Event listener for the add button
 
 
